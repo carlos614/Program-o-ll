@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nome do projeto</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous">
+    </head>
+
+        </body>
+            <div class="container">
+            <div class="jumbotron">
+                <h1>Logotipo</h1>
+                <h3>Controle de vagas</h3>
+            </div>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark bg-dark text-white">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vagas.html">Vagas Disponiveis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Protótipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lista.html">Veiculos cadastrados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qrCode.html">Qrcode</a>
+                    </li>
+                </ul>
+                    </nav>
+                </div>
+             
+                 
+                    <div class="container">
+                        <h1>Cadastrar veiculo</h1>
+                        <hr/>
+                        <div class="row">
+                            <div class="col-md-6">
+                            
+                             <form method="post" name="parkingForm">
+                                <div class="form-group">
+                                    <label for="parking_placa">Placa do carro</label>
+                                    <input type="text" class="form-control" id="parking_placa">
+                                </div>
+                                <div class="form-group">
+                                    <label for="parking_marca">Marca</label>
+                                    <input type="text" class="form-control" id="parking_marca">
+                                </div>
+                                <div class="form-group">
+                                    <label for="parking_modelo">Modelo</label>
+                                    <input type="text" class="form-control" id="parking_modelo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="parking_cor">Cor</label>
+                                    <input type="text" class="form-control" id="parking_cor">
+                                </div>
+                                <!-- Passo 05 - No class adicionar o texto addValue -->
+                                <button type="submit" class="btn btn-primary addValue">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+            
+                    <!-- Passo 06 - A tabela precisa de um ID -->
+                    <table id="tabela" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Placa do carro</th>
+                                <th>Marca</th>
+                                <th>Modelo</th>
+                                <th>Cor</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!-- Passo 02 - Adicionar esses Javascripts -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                <!--Atualizar bootstrap (verificar 1 vez por semana)-->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+                <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+                <!-- Passo 03 - Adicionar essa importação do Javascript a ser criado -->
+                <script src="scriptArquit.js"></script>
+    </body>
+</html>
+    

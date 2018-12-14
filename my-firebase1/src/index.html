@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unicesumar</title>
+
+    <!-- Passo 01 - Adicionar esses CSSs -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema Acadêmico</h1>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Passo 04 - Indicar o método e o nome do formumlario -->
+                <form method="post" name="studentForm">
+                    <div class="form-group">
+                        <label for="student_ra">RA</label>
+                        <input type="text" class="form-control" id="student_ra">
+                    </div>
+                    <div class="form-group">
+                        <label for="student_nome">Nome</label>
+                        <input type="text" class="form-control" id="student_nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="student_email">Email</label>
+                        <input type="text" class="form-control" id="student_email">
+                    </div>
+                    <div class="form-group">
+                        <label for="student_cpf">CPF</label>
+                        <input type="text" class="form-control" id="student_cpf">
+                    </div>
+                    <!-- Passo 05 - No class adicionar o texto addValue -->
+                    <button type="submit" class="btn btn-primary addValue">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Passo 06 - A tabela precisa de um ID -->
+        <table id="tabela" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>RA</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!-- Passo 02 - Adicionar esses Javascripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <!-- Passo 03 - Adicionar essa importação do Javascript a ser criado -->
+    <script src="script.js"></script>
+   </body>
+
+
+</html>

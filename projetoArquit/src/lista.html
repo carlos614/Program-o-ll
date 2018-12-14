@@ -1,0 +1,84 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nome do projeto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) and Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script><!--Atualizar bootstrap-->
+    <!-- Include Firebase Library and Config-->
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+    <!-- Contacts Store JavaScript -->
+    <script src="scriptArquit.js"></script>
+</head>
+
+<body>
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Nome do projeto</title>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+                    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+                    crossorigin="anonymous">
+            </head>
+        
+                </body>
+                    <div class="container">
+                    <div class="jumbotron">
+                        <h1>Logotipo</h1>
+                        <h3>Controle de vagas</h3>
+                    </div>
+                    <nav class="navbar navbar-expand-sm bg-primary navbar-dark bg-dark text-white">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="vagas.html">Vagas Disponiveis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="veiculo.html">Protótipo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Veiculos cadastrados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="qrCode.html">Qrcode</a>
+                            </li>
+                        </ul>
+                            </nav>
+                        </div>
+    <div class="container">
+        <h1>Lista de veiculos cadastrados</h1>
+        <hr/>
+        <table id="tabela" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Placa do carro</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Cor</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Placa do carro</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>cor</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    
+</body>
+
+</html>
